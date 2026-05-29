@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ عنوان الخبر }} | أخبار الجزائر</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <!-- نستخدم نقطتين للرجوع للمجلد الرئيسي -->
+</head>
+<body>
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo"><a href="index.html" style="text-decoration:none; color:inherit;">أخبار <span>الجزائر</span></a></div>
+        </div>
+    </header>
+
+    <main class="container" style="max-width: 800px; padding-top: 40px; padding-bottom: 60px;">
+        <span class="category-badge" style="position: static; display: inline-block; margin-bottom: 15px;">{{ التصنيف }}</span>
+        <h1 style="font-size: 32px; margin-bottom: 15px;">{{ عنوان الخبر }}</h1>
+        <p style="color: var(--text-light); margin-bottom: 25px;">تاريخ النشر: {{ تاريخ الخبر }}</p>
+        
+        <img src="{{ رابط الصورة }}" style="width: 100%; border-radius: 8px; margin-bottom: 30px;">
+        
+        <!-- هنا سيتم وضع نص المقال -->
+        <div class="article-body" style="font-size: 18px; line-height: 1.8;">
+            {{ نص المقال بصيغة HTML (فقرات، عناوين فرعية) }}
+        </div>
+    </main>
+</body>
+</html>
